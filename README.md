@@ -50,20 +50,20 @@ server:
 
 spring:
   datasource:
-    url: ${DB_URL:jdbc:mysql://localhost:3306/study_planner?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true}
-    username: ${DB_USERNAME:root}
-    password: ${DB_PASSWORD:}
+    url: jdbc:mysql://localhost:3306/study_planner?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 你的数据库密码
 
 llm:
   api:
-    provider: ${LLM_PROVIDER:dashscope}
-    base-url: ${LLM_BASE_URL:https://dashscope.aliyuncs.com/compatible-mode/v1}
-    api-key: ${LLM_API_KEY:}
-    model: ${LLM_MODEL:qwen-turbo}
-    mock-mode: ${LLM_MOCK_MODE:true}
+    provider: dashscope
+    base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    api-key: 你的大模型 API Key
+    model: qwen-turbo
+    mock-mode: true
 ```
 
-请根据自己的本机环境设置数据库用户名、密码和大模型 API Key。本地演示时可以保持 `LLM_MOCK_MODE=true`，这样不用真实大模型 Key 也能体验主要流程；需要接入真实模型时再设置 `LLM_API_KEY` 并把 `LLM_MOCK_MODE` 改为 `false`。数据库密码、API Key 这类敏感信息不要提交到公开仓库。
+请根据自己的本机环境修改数据库用户名、密码和大模型 API Key。本地演示时可以保持 `mock-mode: true`，这样不用真实大模型 Key 也能体验主要流程；需要接入真实模型时再填入自己的 `api-key` 并把 `mock-mode` 改为 `false`。数据库密码、API Key 这类敏感信息不要提交到公开仓库。
 
 ## 数据库初始化
 
