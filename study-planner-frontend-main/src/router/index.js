@@ -130,18 +130,14 @@ const router = createRouter({
   ]
 })
 
-// 路由守卫
 router.beforeEach(async (to, from, next) => {
   const userStore = useUserStore()
-  
-  // 如果路由需要认证
+
   if (to.meta.requiresAuth) {
-    // 如果没有用户信息，尝试获取
     if (!userStore.user) {
       await userStore.checkLoginStatus()
     }
-    
-    // 检查是否已登录
+
     if (!userStore.isLoggedIn) {
       next({
         path: '/login',
@@ -150,8 +146,7 @@ router.beforeEach(async (to, from, next) => {
       return
     }
   }
-  
-  // 如果已登录且访问登录/注册页，跳转到仪表盘
+
   if ((to.path === '/login' || to.path === '/register') && userStore.isLoggedIn) {
     next('/dashboard')
     return
@@ -161,7 +156,7 @@ router.beforeEach(async (to, from, next) => {
     next('/dashboard')
     return
   }
-  
+
   next()
 })
 

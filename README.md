@@ -196,3 +196,62 @@ UPDATE user SET role = 'admin' WHERE username = '你的用户名';
 - 后端默认保持 `8080` 端口，方便前端代理配置复用。
 - 不要提交 `node_modules/`、`target/`、日志文件、本地上传文件和真实密钥。
 - 生产环境建议通过 Nginx 等反向代理统一转发前端静态资源、`/api` 和 `/uploads`。
+
+## 项目运行截图
+
+### 首页
+![首页](docs/images/home.png)
+
+### 登录页
+![登录页](docs/images/login.png)
+
+### 注册页
+![注册页](docs/images/register.png)
+
+### 仪表盘
+![仪表盘](docs/images/dashboard.png)
+
+### 创建计划
+![创建计划](docs/images/create-plan.png)
+
+### 我的计划
+![我的计划](docs/images/my-plans.png)
+
+### 计划详情
+![计划详情](docs/images/plan-detail.png)
+
+### 计划工作台
+![计划工作台](docs/images/plan-workbench.png)
+
+### AI 学习助手
+![AI 学习助手](docs/images/ai-assistant.png)
+
+### 学习论坛
+![学习论坛](docs/images/forum.png)
+
+### 问题详情
+![问题详情](docs/images/question-detail.png)
+
+### 发布问题
+![发布问题](docs/images/ask-question.png)
+
+### 话题页面
+![话题页面](docs/images/forum-topic.png)
+
+### 用户主页
+![用户主页](docs/images/forum-user.png)
+
+### 论坛搜索
+![论坛搜索](docs/images/forum-search.png)
+
+### 我的内容
+![我的内容](docs/images/forum-my-content.png)
+
+### 实时聊天
+![实时聊天](docs/images/chat.png)
+
+### 个人资料
+![个人资料](docs/images/profile.png)
+
+### 管理后台
+![管理后台](docs/images/admin.png)

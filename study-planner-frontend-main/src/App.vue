@@ -6,12 +6,16 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import { useUserStore } from './stores/user'
 
 const userStore = useUserStore()
+const route = useRoute()
 
 onMounted(() => {
-  userStore.checkLoginStatus()
+  if (route.meta.requiresAuth) {
+    userStore.checkLoginStatus()
+  }
 })
 </script>
 
