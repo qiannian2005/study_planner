@@ -1,4 +1,4 @@
-# Smart Study Planner 智能学习计划平台
+# Smart Study Planner 智慧学习计划平台
 
 基于 Vue 3 + Spring Boot 的智能学习计划平台，支持用户注册登录、AI 生成学习计划、每日任务打卡、学习统计、论坛问答、群组学习计划、AI 助手和实时聊天室。
 
