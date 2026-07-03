@@ -4,7 +4,7 @@
 
 ## 后端仓库
 
-本项目的后端代码仓库：[https://github.com/NIIT-workshop-of-SHZU/study_planner](https://github.com/NIIT-workshop-of-SHZU/study_planner)
+本项目的后端代码仓库：https://github.com/qiannian2005/study_planner
 
 ## 技术栈
 
